@@ -41,24 +41,29 @@
 #### Mac OS ###
 #.DS_Store
 
-
 # Данные PostgreSQL
 
 docker/postgres-data/
 docker/pgadmin-data/
-
 
 # Gradle
 
 build/
 .gradle/
 
-
 # IDE
-
 .idea/
 *.iml
 
-
 # OS
+
 .DS_Store
+
+#⚠️ ВАЖНО: Локальные секреты для разработки
+
+secret.properties
+
+
+# Логи
+logs/
+*.log

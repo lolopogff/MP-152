@@ -1,4 +1,5 @@
-package ru.mentee.power;
+/* @MENTEE_POWER (C)2025 */
+package ru.mentee.power.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -26,7 +27,8 @@ public class SimpleConnection {
 
             // Выполняем простой запрос
             Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("SELECT COUNT(*) as user_count FROM users");
+            ResultSet resultSet =
+                    statement.executeQuery("SELECT COUNT(*) as user_count FROM users");
 
             if (resultSet.next()) {
                 int userCount = resultSet.getInt("user_count");

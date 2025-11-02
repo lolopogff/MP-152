@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+
+    <appender name="TEST_CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>🧪 %d{HH:mm:ss} %-5level %logger{15} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="ru.mentee.power" level="INFO" additivity="false">
+        <appender-ref ref="TEST_CONSOLE"/>
+    </logger>
+
+    <logger name="org.postgresql" level="OFF"/>
+    <logger name="com.zaxxer.hikari" level="OFF"/>
+    <logger name="org.junit" level="OFF"/>
+    <logger name="org.gradle" level="OFF"/>
+
+    <root level="WARN">
+        <appender-ref ref="TEST_CONSOLE"/>
+    </root>
+
+</configuration>

@@ -1,2 +1,8 @@
-rootProject.name = 'mentee-power-sql'
+pluginManagement {
+	repositories {
+		gradlePluginPortal()
+		mavenCentral()
+	}
+}
 
+rootProject.name = 'mp-sql-api'
